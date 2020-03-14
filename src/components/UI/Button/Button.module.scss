@@ -1,0 +1,20 @@
+.Button{
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px;
+  text-align: center;
+  color: black;
+  border: none;
+  min-width: 120px;
+  &.primary{
+    border: solid 2px #369;
+    background-color: #369;
+    color: white;
+  }
+  &.secondary{
+    border: solid 2px #369;
+  }
+  &.alert{
+    background-color: #936;
+  }
+}

@@ -9,8 +9,15 @@ const burger = props => {
       return (
         <BurgerIngredient key={ingName + i} type={ingName} />
       )
-    })    
-  }) 
+    })
+  })
+  .reduce((arr, el) => {
+    return arr.concat(el)
+  }, []);
+
+  if(ingredientsArr.length === 0) {
+    ingredientsArr = <p>Please add Ingredients</p>;
+  }
 
   return (
     <div className={css.Burger}>
